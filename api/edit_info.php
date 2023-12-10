@@ -1,9 +1,10 @@
 <?php
-// include_once "db.php";
+include_once "db.php";
 
 // $total=$Total->find(1);
 // $total['total']=$_POST['total'];
 // $Total->save($total);
+
 // to("../back.php?do=total");
 
 // --------------------
@@ -19,12 +20,8 @@ $data=$DB->find(1);
 
 //將資料中對應的欄位修改為post過來的值
 $data[$table]=$_POST[$table];
-// echo $_POST[$table];
-// echo '<hr>';
-// echo $table;
-// dd($data);
-// 使用save更新至資料表
+
+//使用save更新至資料表
 $DB->save($data);
 to("../back.php?do=$table");
-
 ?>

@@ -11,8 +11,9 @@
                     <td></td>
                 </tr>
                 <?php
-                   $rows=$DB->all();
-                   foreach($rows as $row){
+            
+                $rows=$DB->all();
+                foreach($rows as $row){
                 ?>
                 <tr>
                     <td width="45%">
@@ -20,7 +21,7 @@
                     </td>
                     <td width="23%">
                         <input type="text" name="text[]" style="width:90%" value="<?=$row['text'];?>">
-                        <input type="hidden" name="" value="<?=$row['id'];?>">
+                        <input type="hidden" name="id[]" value="<?=$row['id'];?>">
                     </td>
                     <td width="7%">
                         <input type="radio" name="sh" value="<?=$row['id'];?>" <?=($row['sh']==1)?'checked':'';?>>

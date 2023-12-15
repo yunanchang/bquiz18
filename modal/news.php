@@ -3,8 +3,10 @@
 <form action="./api/add.php" method="post" enctype="multipart/form-data">
 <table>
     <tr>
-        <td>新增消息資料</td>
-        <td><textarea type="text" name="text" stlye='width:300px'></textarea>
+        <td>最新消息資料</td>
+        <td>
+            <textarea type="text" name="text" style="width:300px;height:150px"></textarea>
+        </td>
     </tr>
 </table>
 <div>

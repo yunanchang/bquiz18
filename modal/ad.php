@@ -3,7 +3,7 @@
 <form action="./api/add.php" method="post" enctype="multipart/form-data">
 <table>
     <tr>
-        <td>新增動態文字廣告</td>
+        <td>動態文字廣告</td>
         <td><input type="text" name="text" id=""></td>
     </tr>
 </table>
